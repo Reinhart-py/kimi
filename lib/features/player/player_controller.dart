@@ -329,13 +329,7 @@ class PlayerCubit extends Cubit<PlayerState> {
       // known, so it isn't created then resized on the first frame — kills the
       // black-frame/resize hitch at playback start.
       androidAttachSurfaceAfterVideoParameters: true,
-      // Render video through the older SurfaceTexture path instead of the newer
-      // SurfaceProducer (the media_kit default). SurfaceProducer paces frames on
-      // Flutter's own vsync loop, which pins the panel at the UI's max refresh
-      // (120Hz) all through playback — the "fps lock" regression vs 1.8.0, which
-      // predated SurfaceProducer. SurfaceTexture is producer-paced (mpv's real
-      // frame timing), so the panel follows the video's fps again like 1.8.0.
-      enableAndroidSurfaceProducer: false,
+
       // Route video enhancement (GLSL upscaling) through mpv's gpu-next renderer,
       // which maps to gpu-api=vulkan,opengl — far more efficient for shaders than
       // the default gpu (OpenGL) path, so upscaling stays smooth. ONLY when
