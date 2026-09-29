@@ -25,7 +25,7 @@ const int kManifestSchemaVersion = 2;
 /// Community Discord invite. Lived in two places (the launch community sheet
 /// and Settings → About) and drifted — the sheet's copy went stale and expired.
 /// One const now, so refreshing the invite is a single edit here.
-const String kDiscordInviteUrl = 'https://discord.gg/Nhy7xa3vC5';
+const String kDiscordInviteUrl = '';
 
 /// Where "Send report" posts the diagnostic log — the Cloudflare Worker in
 /// `cloudflare/log-intake/` (see its README to deploy). No path, no trailing

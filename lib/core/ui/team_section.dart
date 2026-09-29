@@ -36,41 +36,27 @@ const List<TeamMember> kCoreTeam = [
   TeamMember(
     name: 'Reinhart',
     role: 'Lead Developer',
-    github: 'spyou',
-    link: 'https://github.com/spyou',
+    github: 'reinhart-py',
+    link: 'https://github.com/reinhart-py',
   ),
   TeamMember(
-    name: 'NeighborhoodNerd',
-    role: 'Contributor',
-    github: 'neighborhoodnerd',
-    link: 'https://github.com/NeighborhoodNerd',
-  ),
-  TeamMember(
-    name: 'Ombryal',
-    role: 'Discord Head Admin · Contributor',
-    github: 'ombryal',
-    link: 'https://github.com/Ombryal',
+    name: 'Kiri',
+    role: 'Assistance',
+    github: 'kiri',
+    link: 'https://github.com/kiri',
   ),
 ];
 
 /// Community contributors we list by hand, ahead of the GitHub-pulled ones.
 /// For people whose work never landed as a commit — art, design — so the
 /// contributors fetch can't find them.
-const List<TeamMember> kFixedCommunity = [
-  TeamMember(
-    name: 'Riyoc',
-    role: 'New logo creator',
-    link: 'https://discord.com/users/1443370547877646447',
-  ),
-];
+const List<TeamMember> kFixedCommunity = [];
 
 /// GitHub logins NOT shown under Community Contributors: the curated core (they
 /// already appear above) and known ghost / bot accounts.
 const Set<String> kExcludedFromCommunity = {
-  'spyou',
-  'ombryal',
-  'neighborhoodnerd',
-  'chatgptkrylor',
+  'reinhart-py',
+  'kiri',
 };
 
 /// Map GitHub's `/contributors` payload to community [TeamMember]s: drop the
