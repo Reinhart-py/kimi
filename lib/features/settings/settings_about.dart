@@ -203,7 +203,7 @@ class _DeveloperRow extends StatelessWidget {
         child: InkWell(
           borderRadius: BorderRadius.circular(14),
           onTap: () async {
-            final uri = Uri.parse('https://github.com/spyou');
+            final uri = Uri.parse('https://github.com/reinhart-py');
             if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
               await launchUrl(uri, mode: LaunchMode.platformDefault);
             }
@@ -218,7 +218,7 @@ class _DeveloperRow extends StatelessWidget {
             child: Row(
               children: [
                 const TeamAvatar(
-                  url: 'https://github.com/spyou.png?size=200',
+                  url: 'https://github.com/reinhart-py.png?size=200',
                   name: 'Reinhart',
                   size: 46,
                 ),
