@@ -11,12 +11,12 @@ class Environment {
   // build needs a different project (e.g. staging).
   static const String supabaseUrl = String.fromEnvironment(
     'SUPABASE_URL',
-    defaultValue: 'https://eogwzrlfoercfwcfwlmv.supabase.co',
+    defaultValue: 'https://apfitumgbwbfdjpoaqtr.supabase.co',
   );
   static const String supabaseAnonKey = String.fromEnvironment(
     'SUPABASE_ANON_KEY',
     defaultValue:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvZ3d6cmxmb2VyY2Z3Y2Z3bG12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNjgzODIsImV4cCI6MjA5OTk0NDM4Mn0.qr-nHnB9vb7BodP55XJ9-6Rwp__eOGCS6txhLiuWVZw',
+        'sb_publishable_p1zoy8fJixcYosXRFy-TGQ_RjZygFBU',
   );
 
   /// Where Appwrite sends the password-recovery link. Appwrite appends
